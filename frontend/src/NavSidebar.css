@@ -1,0 +1,102 @@
+.ftco_navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    transition: background 0.3s ease;
+    z-index: 1000; 
+  }
+  
+  .navbar-nav .nav-link {
+    cursor: pointer;
+    color: white; 
+    padding: 10px 15px; 
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+    color: white; 
+    background-color: transparent;
+    text-decoration: none; 
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      display: none; 
+      background: rgba(0, 0, 0, 0.9); 
+    }
+  
+    .navbar-collapse.show {
+      display: block; 
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 0;
+    }
+  
+    .navbar-nav .nav-item .nav-link {
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      background-color: #333; 
+    }
+  
+    .navbar-nav .nav-item .nav-link:hover {
+      background-color: #333; 
+    }
+  
+    .navbar-nav .nav-item .nav-link.active {
+      background-color: #dc3545;
+    }
+  
+    .nav-dropdown {
+      display: none;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .nav-dropdown.show {
+      display: block;
+    }
+  
+    .nav-dropdown .nav-item {
+      padding: 0;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-collapse {
+      display: flex; 
+    }
+  
+    .navbar-nav .nav-item {
+      margin-right: 20px;
+    }
+  
+    .navbar-nav .nav-link {
+      display: inline-block;
+      padding: 10px 15px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer; 
+    }
+  
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+      color: white; 
+      background-color: transparent;
+      text-decoration: none; 
+    }
+  
+    .navbar-nav .nav-link.active {
+      color: #dc3545; 
+    }
+  
+    .nav-dropdown {
+      display: none;
+    }
+  }
+  

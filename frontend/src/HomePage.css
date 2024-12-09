@@ -1,0 +1,25 @@
+/* In deiner CSS-Datei */
+.home-page {
+  position: relative;
+  z-index: 1;
+}
+.home-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/assets/images/background.png');
+  background-size: cover;
+  /* Das Bild soll die gesamte Breite und Höhe des Containers abdecken */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  /* Sicherstellen, dass das Hintergrundbild die gesamte Höhe der Seite abdeckt */
+  /* Parallax-Effekt */
+  background-attachment: fixed;
+  /* Das Bild bleibt beim Scrollen fixiert */
+  opacity: 0.5;
+  z-index: -1;
+}

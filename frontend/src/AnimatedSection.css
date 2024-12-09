@@ -1,0 +1,29 @@
+.ftco-animate {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+  }
+  
+  .ftco-animated.fadeIn {
+    opacity: 1;
+  }
+  
+  .ftco-animated.fadeInLeft {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .ftco-animated.fadeInRight {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .ftco-animated.fadeInUp {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .item-animate {
+    opacity: 0;
+    /* Add other necessary styles */
+  }
+  
